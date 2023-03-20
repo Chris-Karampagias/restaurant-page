@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+:root{
+    font-family: 'Oswald',sans-serif,'Times New Roman', Times, serif;
+}
+
+body {
+    height:100vh;
+    margin:0;
+    font-size: 48px;
+}
+
+.wrapper{
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:8rem;
+    background-color: rgb(29, 29, 29);
+}
+
+.navbar button{
+    font-size: 1.5rem;
+    border:none;
+    padding:0.5rem;
+    border-radius: 10px;
+    color:white;
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.navbar button:hover{
+    transform: scale(1.15);
+}
+
+
+.logo-image{
+    height:6rem;
+    width:auto;
+    filter: invert(0%) sepia(47%) saturate(33%) hue-rotate(317deg) brightness(97%) contrast(77%);
+}
+
+.home-image{
+    height:50vh;
+    width:auto;
+}
