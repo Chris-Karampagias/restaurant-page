@@ -1,3 +1,5 @@
+import homeImage from "./assets/images/home-image.jpg";
+
 export default function createHomePage() {
   const body = document.querySelector("body");
   body.classList.add("hide-overflow");
@@ -5,7 +7,7 @@ export default function createHomePage() {
   const homeContainer = document.createElement("div");
   homeContainer.classList.add("home-container");
   const interior = document.createElement("img");
-  interior.setAttribute("src", "../src/assets/images/home-image.jpg");
+  interior.src = homeImage;
   interior.setAttribute("alt", `A sketch of the restaurant's interior`);
   interior.classList.add("home-image");
   const para = document.createElement("p");

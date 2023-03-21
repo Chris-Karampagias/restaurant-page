@@ -1,10 +1,13 @@
 /* eslint-disable default-case */
+
+import logoImage from "./assets/images/2d-logo.png";
+
 export default function createNavbar() {
   const content = document.getElementById("content");
   const navbar = document.createElement("div");
   const logo = document.createElement("img");
   navbar.classList.add("navbar");
-  logo.setAttribute("src", "../src/assets/images/2d-logo.png");
+  logo.src = logoImage;
   logo.setAttribute("alt", `The restaurant's logo`);
   logo.classList.add("logo-image");
   navbar.appendChild(logo);

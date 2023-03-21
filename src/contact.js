@@ -1,5 +1,8 @@
 /* eslint-disable no-case-declarations */
 /* eslint-disable default-case */
+
+import map from "./assets/images/map.jpg";
+
 export default function createContactPage() {
   const content = document.getElementById("content");
   const body = document.querySelector("body");
@@ -9,7 +12,7 @@ export default function createContactPage() {
   const container = document.createElement("div");
   container.classList.add("contact-container");
   const location = document.createElement("img");
-  location.setAttribute("src", "../src/assets/images/map.jpg");
+  location.src = map;
   location.setAttribute(
     "alt",
     `The restaurant's location shown on google maps`
