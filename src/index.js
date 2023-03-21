@@ -2,6 +2,7 @@ import navbar from "./navbar";
 import menuPage from "./menu";
 import homePage from "./home";
 import contactPage from "./contact";
+import "./style.css";
 
 navbar();
 homePage();
