@@ -9,7 +9,7 @@ export default function createContactPage() {
   const container = document.createElement("div");
   container.classList.add("contact-container");
   const location = document.createElement("img");
-  location.setAttribute("src", "../src/assets/images/map.jpg");
+  location.setAttribute("src", "../dist/assets/images/map.jpg");
   location.setAttribute(
     "alt",
     `The restaurant's location shown on google maps`
