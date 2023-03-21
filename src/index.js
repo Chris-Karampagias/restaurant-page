@@ -2,7 +2,10 @@ import navbar from "./navbar";
 import menuPage from "./menu";
 import homePage from "./home";
 import contactPage from "./contact";
-import "./style.css";
+import "./assets/images/2d-logo.png";
+import "./assets/images/background-home.jpg";
+import "./assets/images/home-image.jpg";
+import "./assets/images/map.jpg";
 
 navbar();
 homePage();
