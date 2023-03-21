@@ -13,18 +13,6 @@ body {
   overflow: hidden;
 }
 
-.body-home {
-  height: 100%;
-  font-size: 48px;
-}
-
-.body-menu {
-  height: 100%;
-  margin: 0;
-  font-size: 48px;
-  background-color: orange;
-}
-
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -97,6 +85,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: orange;
 }
 
 .menu-container div {
@@ -110,6 +99,10 @@ body {
   text-align: center;
   font-size: 2.5rem;
   border-bottom: 2px solid orange;
+}
+
+.menu-container > p {
+  font-size: 3rem;
 }
 
 .contact-wrapper {

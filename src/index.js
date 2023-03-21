@@ -4,7 +4,7 @@ import homePage from "./home";
 import contactPage from "./contact";
 
 navbar();
-contactPage();
+menuPage();
 
 /* menuPage();
 const menuButton = document.querySelector(".home-button");

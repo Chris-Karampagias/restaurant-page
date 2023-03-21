@@ -2,7 +2,7 @@
 /* eslint-disable default-case */
 export default function createMenu() {
   const body = document.querySelector("body");
-  body.classList.add("body-menu");
+  body.classList.remove("hide-overflow");
   const content = document.getElementById("content");
   const menuWrapper = document.createElement("div");
   menuWrapper.classList.add("menu-wrapper");
@@ -49,7 +49,7 @@ export default function createMenu() {
         const special = document.createElement("p");
         special.textContent = "House special salad--------$1.75";
         const ceasar = document.createElement("p");
-        ceasar.textContent = "Caesar salad---------------$2.45";
+        ceasar.textContent = "Caesar salad----------------$2.45";
         div3.append(title3, special, ceasar);
         menuContainer.appendChild(div3);
         break;

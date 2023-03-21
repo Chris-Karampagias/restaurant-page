@@ -1,7 +1,6 @@
 export default function createHomePage() {
   const body = document.querySelector("body");
-  body.classList.remove("body-menu");
-  body.classList.add("body-home");
+  body.classList.add("hide-overflow");
   const content = document.getElementById("content");
   const homeContainer = document.createElement("div");
   homeContainer.classList.add("home-container");
