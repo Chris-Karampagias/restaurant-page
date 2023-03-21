@@ -4,7 +4,7 @@ export default function createNavbar() {
   const navbar = document.createElement("div");
   const logo = document.createElement("img");
   navbar.classList.add("navbar");
-  logo.setAttribute("src", "./assets/images/2d-logo.png");
+  logo.setAttribute("src", "../src/assets/images/2d-logo.png");
   logo.setAttribute("alt", `The restaurant's logo`);
   logo.classList.add("logo-image");
   navbar.appendChild(logo);

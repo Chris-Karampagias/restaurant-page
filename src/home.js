@@ -5,7 +5,7 @@ export default function createHomePage() {
   const homeContainer = document.createElement("div");
   homeContainer.classList.add("home-container");
   const interior = document.createElement("img");
-  interior.setAttribute("src", "../dist/assets/images/home-image.jpg");
+  interior.setAttribute("src", "../src/assets/images/home-image.jpg");
   interior.setAttribute("alt", `A sketch of the restaurant's interior`);
   interior.classList.add("home-image");
   const para = document.createElement("p");
