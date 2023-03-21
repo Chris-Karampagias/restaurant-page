@@ -1,77 +1,109 @@
 @font-face {
-    font-family: 'Oswald';
-    src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
+  font-family: "Oswald";
+  src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
 }
 
 :root,
-body{
-    font-family: 'Oswald',sans-serif,'Times New Roman', Times, serif;
-    overflow: hidden;
-}
-
 body {
-    height:100%;
-    margin:0;
-    font-size: 48px;
+  font-family: "Oswald", sans-serif, "Times New Roman", Times, serif;
+  margin: 0;
 }
 
-.wrapper{
-    display: grid;
-    place-items: center;
-    gap: 2rem;
+.body-home {
+  height: 100%;
+  font-size: 48px;
 }
 
-.navbar{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap:8rem;
-    background-color: rgb(29, 29, 29);
+.body-menu {
+  height: 100%;
+  margin: 0;
+  font-size: 48px;
+  background-color: orange;
 }
 
-.navbar button{
-    font-size: 1.5rem;
-    border:none;
-    padding:0.5rem;
-    border-radius: 10px;
-    color:white;
-    background-color: rgb(29, 29, 29);
-    cursor: pointer;
-    transition: all 0.2s ease-in-out
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8rem;
+  background-color: rgb(29, 29, 29);
 }
 
-.navbar button:hover{
-    transform: scale(1.15);
+.navbar button {
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-
-.logo-image{
-    height:6rem;
-    width:auto;
-    filter: invert(0%) sepia(47%) saturate(33%) hue-rotate(317deg) brightness(97%) contrast(77%);
+.navbar button:hover {
+  transform: scale(1.15);
 }
 
-.home-container{
-    background: url(assets/images/background-home.avif);
-    background-size: cover;
-    display:flex;
-    gap:3rem;
-    position: relative;
-    height:70vh;
+.logo-image {
+  height: 6rem;
+  width: auto;
+  filter: invert(0%) sepia(47%) saturate(33%) hue-rotate(317deg) brightness(97%)
+    contrast(77%);
 }
 
-.welcome{
-    margin-left:auto;
-    margin-right:7rem;
-    width:20%;
-    font-size: 2rem;
-    color:rgb(255, 255, 255);;
+.home-container {
+  background: url(assets/images/background-home.jpg);
+  background-size: contain;
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  height: 70vh;
 }
 
-.home-image{
-    height:80vh;
-    width:auto;
-    position:fixed;
-    margin-left:3rem;
-    filter: invert(0%) sepia(47%) saturate(33%) hue-rotate(317deg) brightness(97%) contrast(77%);
+.welcome {
+  margin: 5rem 7rem 0 auto;
+  width: 20%;
+  font-size: 2rem;
+  color: rgb(254, 241, 241);
+  background-color: rgba(88, 88, 88, 0.14);
+}
+
+.home-image {
+  height: 80vh;
+  width: auto;
+  position: fixed;
+  margin-left: 3rem;
+  filter: invert(0%) sepia(47%) saturate(80%) hue-rotate(317deg) brightness(80%)
+    contrast(90%);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 65%;
+  margin: 5rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container div {
+  margin-top: -2rem;
+  font-size: 3rem;
+}
+
+.starter p:first-child,
+.soups p:first-child,
+.salads p:first-child {
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 2px solid orange;
 }
