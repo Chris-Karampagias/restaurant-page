@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+:root,
+body {
+  font-family: "Oswald", sans-serif, "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+.clicked {
+  pointer-events: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8rem;
+  background-color: rgb(29, 29, 29);
+}
+
+.navbar button {
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar button:hover {
+  transform: scale(1.15);
+}
+
+.logo-image {
+  height: 6rem;
+  width: auto;
+  filter: invert(0%) sepia(47%) saturate(33%) hue-rotate(317deg) brightness(97%)
+    contrast(77%);
+}
+
+.home-container {
+  background: url(assets/images/background-home.jpg);
+  background-size: contain;
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  height: 70vh;
+}
+
+.welcome {
+  margin: 5rem 7rem 0 auto;
+  width: 20%;
+  font-size: 2rem;
+  color: rgb(254, 241, 241);
+  background-color: rgba(88, 88, 88, 0.14);
+}
+
+.home-image {
+  height: 80vh;
+  width: auto;
+  position: fixed;
+  margin-left: 3rem;
+  filter: invert(0%) sepia(47%) saturate(80%) hue-rotate(317deg) brightness(80%)
+    contrast(90%);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 65%;
+  margin: 5rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
+
+.menu-container div {
+  margin-top: -2rem;
+  font-size: 3rem;
+}
+
+.starter p:first-child,
+.soups p:first-child,
+.salads p:first-child {
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 2px solid orange;
+}
+
+.menu-container > p {
+  font-size: 3rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: orange;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: fit-content;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 45%;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.location {
+  align-self: center;
+  border-radius: 10px;
+}
+
+li {
+  margin-top: 0.5rem;
+}
