@@ -13,6 +13,7 @@ export default function createNavbar() {
     switch (i) {
       case 0:
         button.classList.add("home-button");
+        button.classList.add("clicked");
         button.textContent = "Home";
         navbar.appendChild(button);
         break;

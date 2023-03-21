@@ -4,13 +4,44 @@ import homePage from "./home";
 import contactPage from "./contact";
 
 navbar();
-menuPage();
+homePage();
 
-/* menuPage();
-const menuButton = document.querySelector(".home-button");
+const menuButton = document.querySelector(".menu-button");
+const contactButton = document.querySelector(".contact-button");
+const homeButton = document.querySelector(".home-button");
 const content = document.getElementById("content");
-const homeWrapper = document.querySelector("menu-wrapper");
-menuButton.addEventListener("click", () => {
-  content.removeChild(homeWrapper);
+
+function changeButtonStatus(element) {
+  element.classList.toggle("clicked");
+}
+
+function findClickedButton() {
+  if (homeButton.classList.contains("clicked")) {
+    changeButtonStatus(homeButton);
+  } else if (menuButton.classList.contains("clicked")) {
+    changeButtonStatus(menuButton);
+  } else {
+    changeButtonStatus(contactButton);
+  }
+}
+
+homeButton.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  findClickedButton();
+  homeButton.classList.toggle("clicked");
   homePage();
-}); */
+});
+
+menuButton.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  findClickedButton();
+  menuButton.classList.toggle("clicked");
+  menuPage();
+});
+
+contactButton.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  findClickedButton();
+  contactButton.classList.toggle("clicked");
+  contactPage();
+});
