@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+.hide-overflow {
+  overflow: hidden;
+}
+
 .body-home {
   height: 100%;
   font-size: 48px;
@@ -106,4 +110,32 @@ body {
   text-align: center;
   font-size: 2.5rem;
   border-bottom: 2px solid orange;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: orange;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: fit-content;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 45%;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.location {
+  align-self: center;
+  border-radius: 10px;
+}
+
+li {
+  margin-top: 0.5rem;
 }

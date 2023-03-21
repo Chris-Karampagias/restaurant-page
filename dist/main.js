@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContactPage)\n/* harmony export */ });\n/* eslint-disable no-case-declarations */\n/* eslint-disable default-case */\nfunction createContactPage() {\n  const content = document.getElementById(\"content\");\n  const body = document.querySelector(\"body\");\n  body.classList.add(\"hide-overflow\");\n  const wrapper = document.createElement(\"div\");\n  wrapper.classList.add(\"contact-wrapper\");\n  const container = document.createElement(\"div\");\n  container.classList.add(\"contact-container\");\n  const location = document.createElement(\"img\");\n  location.setAttribute(\"src\", \"../src/assets/images/map.jpg\");\n  location.setAttribute(\n    \"alt\",\n    `The restaurant's location shown on google maps`\n  );\n  location.classList.add(\"location\");\n  const list = document.createElement(\"ul\");\n  for (let i = 0; i < 3; i++) {\n    switch (i) {\n      case 0:\n        const item1 = document.createElement(\"li\");\n        item1.textContent = \"Parkville St.\";\n        list.appendChild(item1);\n        break;\n      case 1:\n        const item2 = document.createElement(\"li\");\n        item2.textContent = \"393049202\";\n        list.appendChild(item2);\n        break;\n      case 2:\n        const item3 = document.createElement(\"li\");\n        item3.textContent = \"realemail@email.com\";\n        list.appendChild(item3);\n        break;\n    }\n  }\n  container.append(location, list);\n  wrapper.appendChild(container);\n  content.appendChild(wrapper);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n/* menuPage();\nconst menuButton = document.querySelector(\".home-button\");\nconst content = document.getElementById(\"content\");\nconst homeWrapper = document.querySelector(\"menu-wrapper\");\nmenuButton.addEventListener(\"click\", () => {\n  content.removeChild(homeWrapper);\n  homePage();\n}); */\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n/* menuPage();\nconst menuButton = document.querySelector(\".home-button\");\nconst content = document.getElementById(\"content\");\nconst homeWrapper = document.querySelector(\"menu-wrapper\");\nmenuButton.addEventListener(\"click\", () => {\n  content.removeChild(homeWrapper);\n  homePage();\n}); */\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
